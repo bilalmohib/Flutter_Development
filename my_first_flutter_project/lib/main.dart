@@ -15,6 +15,27 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Defining variables 
+    final wordPair = WordPair.random();
+    String name = "Muhammad Bilal";
+    double pi = 3.14;
+    int age = 20;
+    bool isMale = true;
+    var name2 = "Muhammad Bilal";
+    var pi2 = 3.14;
+    var age2 = 20;
+    var isMale2 = true;
+    // Printing variables
+    print(wordPair);
+    print(name);
+    print(pi);
+    print(age);
+    print(isMale);
+    print(name2);
+    print(pi2);
+    print(age2);
+    print(isMale2);
+
     return MaterialApp(
       title: 'sd to Flutter',
       home: Scaffold(
@@ -22,7 +43,7 @@ class MyApp extends StatelessWidget {
           title: const Text('Welcodsaf dsafme to Flutter'),
         ),
         body: Center(
-          child: Container(child: Text('Hello fgsdgdsfgfr', style: TextStyle(fontSize: 20.0)),
+          child: Container(child: Text('Hello ${wordPair} fgsdgdddsfgfr $name', style: TextStyle(fontSize: 20.0)),
           ),
         ),
       ),
